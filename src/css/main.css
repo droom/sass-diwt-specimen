@@ -1,0 +1,19 @@
+body {
+  margin: 50px auto;
+  width: 98vw;
+  background: #2e2e2e;
+}
+
+section {
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}

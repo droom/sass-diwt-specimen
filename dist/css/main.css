@@ -1,0 +1,31 @@
+body {
+  margin: 0 auto;
+  width: 98vw;
+  background: #2e2e2e;
+  font-family: arial;
+}
+
+section {
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+h3 {
+  color: white;
+  font-size: 30px;
+  position: sticky;
+  top: 0;
+  margin: 10px 0;
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}

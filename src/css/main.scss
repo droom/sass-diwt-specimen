@@ -1,8 +1,128 @@
+$Nitti: 'Nitti Normal', monospace;
+$Graphik: 'Graphik', arial;
+
+
+@font-face {
+  font-family: 'Graphik';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Graphik.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Nitti Normal';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/Nitti-Normal.woff') format('woff');
+}
+
+
+.spectral-extralight {
+  font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.spectral-light {
+  font-family: "Spectral", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.spectral-regular {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.spectral-medium {
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.spectral-semibold {
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.spectral-bold {
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.spectral-extrabold {
+  font-family: "Spectral", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.spectral-extralight-italic {
+  font-family: "Spectral", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.spectral-light-italic {
+  font-family: "Spectral", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.spectral-regular-italic {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.spectral-medium-italic {
+  font-family: "Spectral", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.spectral-semibold-italic {
+  font-family: "Spectral", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.spectral-bold-italic {
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.spectral-extrabold-italic {
+  font-family: "Spectral", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+
+
+
 body{
   margin: 0 auto;
   width: 98vw;
   background: #2e2e2e;
+  background: #221e20;
   font-family: arial;
+  color: #ddd;
+
+}
+
+nav{
+  margin: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+nav li{
+  text-transform: capitalize;
 }
 
 section{
@@ -13,15 +133,53 @@ img{
   width: 100%;
 }
 
+nav, p{
+  padding: 0 16px;
+}
+
 h3{
-  color: white;
-  font-size: 30px;
+  font-family: $Nitti;
+  font-size: 20px;
   position: sticky;
   top: 0;
   margin: 10px 0;
   padding: 10px 16px;
-  background: #555;
+  background: rgba(0,0,0,0.4);
   color: #f1f1f1;
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  // mix-blend-mode: difference;
+}
+
+ol,
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  font-family: 'Nitti Normal', monospace;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+p, blockquote{
+  // font-family: $Graphik;
+  font-family: 'Nitti Normal', monospace;
+  font-weight: 400;
+  font-weight: normal;
+
+    font-family: "Spectral", serif;
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+p, blockquote{
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.32em;
 }
 
 .wrap{

@@ -106,7 +106,7 @@ body {
 nav {
   margin: 40px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: fit-content(20ch) fit-content(37ch) fit-content(38ch) fit-content(38ch) fit-content(38ch);
 }
 
 nav li {
